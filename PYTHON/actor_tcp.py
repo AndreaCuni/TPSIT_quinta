@@ -11,11 +11,9 @@ def actor():
 
     srv.bind((server_ip,server_port))
     
-
+    srv.listen()
     while True: 
         
-        srv.listen()
-
         connection, address = srv.accept()
         data = connection.recv(4096)
         print(f"msg from client: {data.decode()}, from {address}")
