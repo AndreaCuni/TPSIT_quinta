@@ -3,12 +3,19 @@ from flask import jsonify
 
 books = [
     {
+        "id" : 1,
         "titolo" : "nome della rosa",
-        "autore" : "umberto eco"
+        "autore" : "Umberto Eco"
     },
     {
+        "id" : 2,
         "titolo" : "il problema dei tre corpi",
-        "autore" : "liu cixin"
+        "autore" : "Liu Cixin"
+    },
+    {
+        "id" : 2,
+        "titolo" : "Fondazione",
+        "autore" : "Isaac Asimov"
     }
 
 ]
